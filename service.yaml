@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: image-recognition
+spec:
+  selector:
+    app: human-detection-app
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080  # Changed to 8080 to match the application's listening port
+  type: LoadBalancer
+

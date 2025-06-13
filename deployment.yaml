@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: image-recognition
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: human-detection-app
+  template:
+    metadata:
+      labels:
+        app: human-detection-app
+    spec:
+      containers:
+      - name: image-recognition  # Updated name
+        image: gcr.io/imagerecognition-397311/image_recognition
