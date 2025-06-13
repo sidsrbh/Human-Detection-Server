@@ -35,5 +35,5 @@ def image_to_ascii(image_path):
         print(ascii_str)
 
 if __name__ == "__main__":
-    image_path = "/Users/sidsrbh/Downloads/Black Logo_No BG.png"  # Replace with the path to your image
+    image_path = "/your/image/path/Black Logo_No BG.png"  # Replace with the path to your image
     image_to_ascii(image_path)
